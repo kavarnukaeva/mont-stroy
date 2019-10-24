@@ -1,0 +1,19 @@
+@mixin centerer() {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
