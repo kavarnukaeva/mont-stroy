@@ -1,0 +1,26 @@
+.page-main {
+  background-color: #fefdff;
+}
+
+.page-main__info-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    @include centerer();
+
+    display: block;
+    padding-top: 39px;
+    padding-bottom: 39px;
+
+    p {
+      padding-right: 22px;
+      padding-left: 25px;
+
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      font-family: $brand-font;
+      color: #000000;
+    }
+  }
+}
