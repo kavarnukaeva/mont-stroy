@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  //display: flex;
-  //flex-direction: column;
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
-  //min-height: 100vh;
+  min-height: 100vh;
   font-family: $brand-font;
 }
 
