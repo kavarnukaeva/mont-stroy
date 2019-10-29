@@ -1,5 +1,6 @@
 .advantages {
-  margin-top: -250px;
+  margin-top: -210px;
+  margin-bottom: 103px;
   padding-right: 25px;
   padding-left: 25px;
 
@@ -31,7 +32,6 @@
 
 .advantages__item {
   position: relative;
-  max-width: 232px;
   padding-top: 95px;
 
   font-size: 15px;
@@ -69,6 +69,8 @@
   }
 
   &--quality {
+    width: 191px;
+
     &::before {
       width: 62px;
       height: 64px;
@@ -78,11 +80,13 @@
   }
 
   &--deadline {
-    padding-right: 57px;
+    width: 187px;
+    padding-left: 24px;
 
     &::before {
-      left: 40%;
-      transform: translate(-40%, 0);
+      top: 11%;
+      left: 50%;
+      transform: translate(-50%, -11%);
 
       width: 74px;
       height: 79px;
@@ -92,8 +96,8 @@
   }
 
   &--production {
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 232px;
+    margin-right: -10px;
 
     &::before {
       width: 70px;

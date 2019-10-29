@@ -1,13 +1,36 @@
 .heading {
-  display: none;
+  position: relative;
 
-  @media (max-width: $mobile-width) {
-    padding-left: 20px;
-    font-size: 20px;
-    font-weight: 900;
-    font-family: $raleway-font;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: #000000;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: $raleway-font;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 47%;
+    left: 26%;
+    transform: translate(-47% -26%);
+
+    width: 868px;
+    height: 2px;
+    background-color: #000000;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--contacts {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+      padding-left: 20px;
+    }
   }
 }
