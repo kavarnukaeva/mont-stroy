@@ -1,6 +1,17 @@
 .services {
+  margin-bottom: 65px;
   padding-right: 25px;
   padding-left: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .services__main-wrapper {
@@ -9,6 +20,15 @@
 
 .services__heading {
   margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
 }
 
 .services__wrapper {
@@ -20,6 +40,7 @@
   margin-right: -44px;
 
   @media (max-width: $tablet-width) {
+    position: relative;
     flex-direction: column;
     margin-right: 0;
   }
@@ -27,11 +48,27 @@
 
 .services__inner-wrapper {
   width: 33%;
-  margin-bottom: 35px;
-  padding-right: 44px;
+  margin-bottom: 43px;
+  padding-right: 38px;
 
   @media (max-width: $tablet-width) {
     width: calc(50% - 10px);
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding-right: 0;
+
+    &:first-child {
+      position: absolute;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-left: auto;
+
+    &:first-child {
+      position: inherit;
+    }
   }
 }
 
@@ -39,12 +76,35 @@
   height: 100%;
 
   padding-top: 31px;
-  padding-right: 44px;
-  padding-bottom: 50px;
+  padding-bottom: 24px;
   padding-left: 44px;
 
   box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
+
+  &--project {
+    padding-right: 49px;
+  }
+
+  &--engineering {
+    padding-right: 51px;
+  }
+
+  &--building {
+    padding-right: 47px;
+  }
+
+  &--maintanance {
+    padding-right: 48px;
+  }
+
+  &--electricity {
+    padding-right: 45px;
+  }
+
+  &--bonding {
+    padding-right: 52px;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -58,10 +118,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
     padding-right: 25px;
-
     background-color: #f4f4f4;
-    border-bottom: 1px solid #e8e8e8;
   }
 }
 
@@ -76,6 +135,11 @@
   text-transform: uppercase;
   color: #000000;
 
+  &--building,
+  &--bonding {
+    margin-bottom: 12px;
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
     padding-top: 18px;
@@ -85,6 +149,10 @@
     font-weight: 400;
     color: #313131;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
 }
 
 .services__list {
@@ -92,16 +160,49 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+
+    &--engineering {
+      .services__item {
+        height: 48px;
+        padding-top: 13px;
+
+        &--less-padded {
+          padding-top: 3px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &--engineering {
+      .services__item {
+        height: 42px;
+        padding-bottom: 10px;
+
+        &:nth-child(3) {
+          height: 37px;
+          padding-top: 10px;
+        }
+
+        &--less-padded {
+          padding-top: 3px;
+          padding-bottom: 3px;
+          line-height: 1;
+        }
+      }
+    }
   }
 }
 
 .services__item {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
     padding-top: 18px;
     padding-bottom: 18px;
+    padding-right: 20px;
     padding-left: 20px;
     background-color: #f4f4f4;
     border-bottom: 1px solid #e8e8e8;
@@ -109,6 +210,7 @@
     &:hover,
     &:focus {
       box-shadow: 0 2px 6px 1px rgba(0, 255, 216, 0.65);
+      border-bottom: none;
       border: 1px solid #00ffd7;
     }
   }
@@ -125,6 +227,16 @@
     font-size: 14px;
     line-height: 1.3;
     color: #000000;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
+
+  &--tablet {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:hover,

@@ -1,15 +1,56 @@
 .advantages {
   margin-top: -210px;
-  margin-bottom: 103px;
+  margin-bottom: 107px;
   padding-right: 25px;
   padding-left: 25px;
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
-    display: none;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .slick-dots {
+    li {
+      width: 6px;
+      height: 6px;
+      margin: 0;
+      margin-right: 5px;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+
+    button::before {
+      top: auto;
+      width: 100%;
+      height: 100%;
+      line-height: 0;
+      color: #d8d8d8;
+      opacity: 1;
+    }
+  }
+
+  .slick-dots li.slick-active {
+    width: 8px;
+    height: 8px;
+
+    button::before {
+      width: 8px;
+      height: 8px;
+      color: #00ffd7;
+    }
+  }
+
+  .slick-track {
+    display: flex;
   }
 }
 
@@ -20,6 +61,12 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
+    padding-bottom: 78px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+    padding-bottom: 14px;
   }
 }
 
@@ -28,82 +75,202 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    border: 1px solid #dddddd;
+  }
 }
 
 .advantages__item {
   position: relative;
-  padding-top: 95px;
 
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.3;
-  font-family: $brand-font;
   text-align: center;
-  color: #ffffff;
 
   @media (max-width: $tablet-width) {
-    padding-right: 40px;
-    padding-bottom: 35px;
-    padding-left: 40px;
+    width: calc(33% - 8px);
+    padding: 17px;
+    padding-bottom: 30px;
 
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
     background-color: #ffffff;
 
-    &:hover,
-    &:focus {
-      font-size: 14px;
-      color: #000000;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -33px;
+
+      width: 8px;
+      height: 8px;
+      background-color: #d6d6d6;
+      border-radius: 50%;
+
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
     }
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    @media (max-width: $mobile-width) {
+      align-self: flex-start;
+      padding: 31px;
 
-    background-repeat: no-repeat;
+      box-shadow: none;
+    }
   }
 
   &--quality {
     width: 191px;
 
-    &::before {
-      width: 62px;
-      height: 64px;
+    @media (max-width: $tablet-width) {
+      width: calc(33% - 8px);
 
-      background-image: url("#{$image-dir}/like@1x.png");
+      &::after {
+        right: -124px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
     }
   }
 
   &--deadline {
-    width: 187px;
+    width: 191px;
     padding-left: 24px;
 
-    &::before {
-      top: 11%;
-      left: 50%;
-      transform: translate(-50%, -11%);
+    @media (max-width: $tablet-width) {
+      width: 33%;
 
-      width: 74px;
-      height: 79px;
+      &::after {
+        right: 112px;
+      }
+    }
 
-      background-image: url("#{$image-dir}/handshake@1x.png");
+    @media (max-width: $mobile-width) {
+      width: 100%;
     }
   }
 
   &--production {
     width: 232px;
-    margin-right: -10px;
 
-    &::before {
-      width: 70px;
-      height: 69px;
+    @media (max-width: $tablet-width) {
+      width: calc(33% - 8px);
 
-      background-image: url("#{$image-dir}/settings@1x.png");
+      &::after {
+        left: -117px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  &--active {
+    @media (max-width: $tablet-width) {
+      z-index: 1;
+
+      padding-bottom: 35px;
+
+      transform: scale(1.17, 1.24);
+
+      svg {
+        fill: #000000;
+        transform: scale(1.17, 1.17);
+      }
+
+      span {
+        padding: 0 30px;
+
+        font-size: 12px;
+        color: #000000;
+      }
+
+      &::after {
+        bottom: -11px;
+        background-color: #00ffd7;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      transform: none;
+
+      svg {
+        transform: none;
+      }
+    }
+  }
+}
+
+
+.advantages__description {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: $brand-font;
+  // text-align: center;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.advantages__icon {
+  margin-bottom: 26px;
+  fill: #ffffff;
+
+  &--quality {
+    width: 62px;
+    height: 62px;
+  }
+
+  &--deadline {
+    width: 80px;
+    height: 62px;
+  }
+
+  &--production {
+    width: 70px;
+    height: 62px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+
+    fill: #b2b2b2;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 70px;
+    height: 69px;
+  }
+}
+
+.advantages__item.slick-current {
+  @media (max-width: $mobile-width) {
+    padding: 45px;
+
+    text-align: center;
+
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.advantages__item.slick-slide {
+  .advantages__description {
+    @media (max-width: $mobile-width) {
+      font-size: 14px;
+      color: #000000;
+    }
+  }
+
+  .advantages__icon {
+    @media (max-width: $mobile-width) {
+      fill: #000000;
     }
   }
 }

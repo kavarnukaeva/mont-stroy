@@ -35,7 +35,7 @@
   @media (max-width: $tablet-width) {
     min-width: 150px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
   }
 
   @media (max-width: $mobile-width) {
@@ -154,7 +154,6 @@
 .page-header__feedback-button {
   padding: 14px 35px;
 
-  border: none;
   background-color: #00ffd8;
 
   font-size: 16px;

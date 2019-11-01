@@ -49,6 +49,11 @@
     @media (max-width: $mobile-width) {
       margin-bottom: 30px;
     }
+
+    &:hover,
+    &:focus {
+      color: #00ffd7;
+    }
   }
 
   span,
@@ -73,7 +78,7 @@
 
   @media (max-width: $tablet-width) {
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 53px;
   }
 
   @media (max-width: $mobile-width) {
@@ -123,6 +128,11 @@
     @media (max-width: $tablet-width) {
       padding: 3px 5px;
     }
+
+    &:hover,
+    &:focus {
+      border-color: #00ffd7;
+    }
   }
 
   &--name {
@@ -131,11 +141,12 @@
 
     @media (max-width: $tablet-width) {
       margin-right: 33px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     @media (max-width: $mobile-width) {
       margin-right: 0;
+      margin-bottom: 25px;
     }
   }
 
@@ -144,6 +155,10 @@
 
     @media (max-width: $tablet-width) {
       width: 49%;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 44%;
     }
   }
 
@@ -167,7 +182,7 @@
     margin-bottom: 30px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     @media (max-width: $mobile-width) {
@@ -192,8 +207,8 @@
 .feedback__button {
   display: block;
   margin: 0 auto;
-  margin-bottom: 36px;
-  padding: 8px 47px;
+  margin-bottom: 32px;
+  padding: 10px 47px;
 
   font-size: 25px;
   font-weight: 700;
@@ -205,11 +220,17 @@
   background-color: #000000;
   border: none;
   border-radius: unset;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
     padding: 9px 37px;
     font-size: 16px;
     line-height: 1.6;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }

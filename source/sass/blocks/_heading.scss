@@ -12,7 +12,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 47%;
+    top: 50%;
     left: 26%;
     transform: translate(-47% -26%);
 
@@ -25,12 +25,28 @@
     }
   }
 
+  @media (max-width: $tablet-width) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+  }
+
   &--contacts {
     display: none;
 
     @media (max-width: $mobile-width) {
       display: block;
+      margin-bottom: 19px;
       padding-left: 20px;
+    }
+  }
+
+  &--partners {
+    &::before {
+      left: 175%;
+      width: 715px;
     }
   }
 }

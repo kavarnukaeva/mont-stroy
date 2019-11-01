@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>МонтСтрой</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
@@ -51,7 +53,7 @@
 
         <div class="page-header__contacts">
           <a class="page-header__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
-          <button class="page-header__feedback-button" type"button">Обратная связь</button>
+          <a class="page-header__feedback-button" href="#feedback">Обратная связь</a>
         </div>
       </div>
     </header>
@@ -64,8 +66,8 @@
           <p class="company__info">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="company__year">1992</span> года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.</p>
           <p class="company__info company__info--mobile">Работаем на российском рынке с <span class="company__year">1992</span> года</p>
           <div class="company__buttons-wrapper">
-            <button class="company__services-button" type"button">Наши услуги</button>
-            <button class="company__feedback-button" type"button">Связаться с нами</button>
+            <a class="company__services-button" href="#services">Наши услуги</a>
+            <a class="company__feedback-button" href="#feedback">Связаться с нами</a>
           </div>
         </div>
       </section>
@@ -78,19 +80,28 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--quality ">Гарантированное высокое качество продукции</li>
-            <li class="advantages__item advantages__item--deadline">Исполнение всех сроков и обязательств</li>
-            <li class="advantages__item advantages__item--production">Собственная производственная база</li>
+            <li class="advantages__item advantages__item--quality ">
+              <svg class="advantages__icon advantages__icon--quality" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001"><circle cx="110.202" cy="394.611" r="17.302"/><path d="M501.619 301.273c0-8.503-2.634-16.4-7.121-22.929 10.566-7.335 17.503-19.547 17.503-33.354 0-22.378-18.206-40.585-40.583-40.585H364.723l6.758-15.152c9.88-22.156 14.916-45.692 14.968-69.951l.061-29.773c0-22.999-18.711-41.711-41.711-41.711-17.096 0-32.282 10.241-38.688 26.092-.282.699-9.989 29.296-9.989 29.296a147.792 147.792 0 0 1-44.908 65.245l-49.492 41.403H173.11v-13.061c0-13.721-11.163-24.885-24.885-24.885H24.885C11.163 171.908 0 183.071 0 196.793v242.506c0 13.721 11.163 24.885 24.885 24.885h123.338c13.721 0 24.885-11.163 24.885-24.885v-19.48h15.621l15.509 7.497c36.688 17.734 77.618 27.108 118.367 27.108h117.666c22.378 0 40.585-18.206 40.585-40.583 0-8.503-2.634-16.4-7.121-22.929 10.566-7.335 17.503-19.547 17.503-33.354 0-8.503-2.634-16.4-7.121-22.929 10.566-7.335 17.502-19.548 17.502-33.356zM148.223 439.299H24.885V196.792h123.338l.016 242.506-.016.001zm323.195-178.608h-17.706c-6.872 0-12.442 5.57-12.442 12.442s5.57 12.442 12.442 12.442h7.324c8.657 0 15.7 7.042 15.7 15.7s-7.042 15.7-15.7 15.7h-17.704c-6.872 0-12.442 5.57-12.442 12.442s5.57 12.442 12.442 12.442h7.324c8.656 0 15.7 7.042 15.7 15.7 0 8.656-7.042 15.699-15.7 15.699h-17.704c-6.872 0-12.442 5.57-12.442 12.442s5.57 12.442 12.442 12.442h7.324c8.657 0 15.7 7.044 15.7 15.7-.002 8.654-7.045 15.696-15.702 15.696H322.608c-37.021 0-74.206-8.516-107.537-24.627l-18.075-8.737a12.446 12.446 0 0 0-5.415-1.241H173.11V234.737h33.13c2.919 0 5.745-1.026 7.983-2.899l52.957-44.302a172.657 172.657 0 0 0 52.471-76.232s9.9-28.823 9.958-29.019a16.762 16.762 0 0 1 15.191-9.582c9.278 0 16.826 7.548 16.826 16.826l-.061 29.721c-.044 20.764-4.354 40.906-12.811 59.869l-14.493 32.502a12.38 12.38 0 0 0-.53 8.685c.071.245 2.758 8.986 11.946 8.986H471.42c8.656 0 15.699 7.042 15.699 15.7-.003 8.656-7.045 15.699-15.701 15.699z"/></svg>
+              <span class="advantages__description">Гарантированное высокое качество продукции</span>
+            </li>
+            <li class="advantages__item advantages__item--deadline advantages__item--active">
+              <svg class="advantages__icon advantages__icon--deadline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="414.09" cy="199.328" r="12.308"/><circle cx="335.046" cy="199.328" r="12.308"/><circle cx="256.001" cy="199.328" r="12.308"/><circle cx="176.957" cy="199.328" r="12.308"/><circle cx="97.912" cy="199.328" r="12.308"/><circle cx="414.09" cy="278.373" r="12.308"/><circle cx="335.046" cy="278.373" r="12.308"/><circle cx="256.001" cy="278.373" r="12.308"/><circle cx="97.912" cy="278.373" r="12.308"/><circle cx="414.09" cy="357.417" r="12.308"/><circle cx="335.046" cy="357.417" r="12.308"/><circle cx="256.001" cy="357.417" r="12.308"/><circle cx="176.957" cy="357.417" r="12.308"/><circle cx="97.912" cy="357.417" r="12.308"/><path d="M214.1 230.65h-74.29c-5.844 0-10.58 4.736-10.58 10.58v74.291c0 5.844 4.736 10.58 10.58 10.58h74.29c5.844 0 10.58-4.736 10.58-10.58v-74.289c0-5.845-4.737-10.582-10.58-10.582zm-10.58 74.29h-53.13v-53.129h53.129v53.129z"/><path d="M476.733 89.114h-77.709V75.535c0-6.493-5.263-11.756-11.756-11.756-6.491 0-11.756 5.264-11.756 11.756v13.579h-64.001V75.535c0-6.493-5.264-11.756-11.756-11.756-6.493 0-11.756 5.264-11.756 11.756v13.579H224V75.535c0-6.493-5.263-11.756-11.756-11.756s-11.756 5.264-11.756 11.756v13.579h-64.001V75.535c0-6.493-5.263-11.756-11.756-11.756s-11.756 5.264-11.756 11.756v13.579h-77.71C15.821 89.114 0 104.934 0 124.38v288.573c0 19.446 15.821 35.267 35.267 35.267h441.467c19.446 0 35.267-15.821 35.267-35.267V124.38c-.001-19.446-15.823-35.266-35.268-35.266zm0 335.596H35.267c-6.482 0-11.756-5.274-11.756-11.756V124.38c0-6.482 5.274-11.756 11.756-11.756h77.709v13.578c0 6.491 5.263 11.756 11.756 11.756s11.756-5.264 11.756-11.756v-13.578h64.001v13.578c0 6.491 5.263 11.756 11.756 11.756s11.756-5.264 11.756-11.756v-13.578H288v13.578c0 6.491 5.263 11.756 11.756 11.756 6.491 0 11.756-5.264 11.756-11.756v-13.578h64.001v13.578c0 6.491 5.264 11.756 11.756 11.756 6.493 0 11.756-5.264 11.756-11.756v-13.578h77.709c6.482 0 11.756 5.274 11.756 11.756v288.573h.001c-.002 6.483-5.276 11.757-11.758 11.757z"/></svg>
+              <span class="advantages__description">Исполнение всех сроков и обязательств</span>
+            </li>
+            <li class="advantages__item advantages__item--production">
+              <svg class="advantages__icon advantages__icon--production" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M328.844 368.733a1077.046 1077.046 0 0 0-16.433-9.675 143.063 143.063 0 0 0 .006-33.316c5.546-3.2 11.068-6.45 16.425-9.671 9.02-5.42 12.78-16.856 8.744-26.603l-.001-.001-11.771-28.418c-4.037-9.744-14.777-15.175-24.993-12.63a1055.585 1055.585 0 0 0-18.455 4.776 143.104 143.104 0 0 0-23.563-23.554 1062.96 1062.96 0 0 0 4.778-18.461c2.545-10.211-2.885-20.955-12.629-24.992l-28.418-11.771c-9.744-4.038-21.183-.281-26.605 8.741a1072.127 1072.127 0 0 0-9.674 16.433 143.118 143.118 0 0 0-33.316-.007 1063.418 1063.418 0 0 0-9.67-16.426c-5.424-9.02-16.86-12.778-26.605-8.741l-28.418 11.771c-9.742 4.036-15.174 14.781-12.629 24.992a1051.12 1051.12 0 0 0 4.776 18.455 143.02 143.02 0 0 0-23.553 23.563 1060.79 1060.79 0 0 0-18.463-4.779c-10.214-2.547-20.956 2.888-24.993 12.631L1.615 289.467c-4.035 9.745-.276 21.182 8.742 26.602 5.375 3.23 10.9 6.482 16.433 9.675a143.172 143.172 0 0 0-.006 33.316 1077.364 1077.364 0 0 0-16.429 9.672c-9.018 5.421-12.777 16.857-8.741 26.603l11.772 28.418c4.036 9.743 14.775 15.176 24.993 12.63a1054.04 1054.04 0 0 0 18.453-4.776 143.175 143.175 0 0 0 23.563 23.553 1068.61 1068.61 0 0 0-4.778 18.461c-2.545 10.211 2.885 20.956 12.629 24.992l28.419 11.772a21.24 21.24 0 0 0 8.137 1.615c7.362 0 14.514-3.779 18.471-10.355a1081.304 1081.304 0 0 0 9.674-16.432 143.337 143.337 0 0 0 33.316.006c3.179 5.512 6.43 11.034 9.67 16.427 5.422 9.02 16.858 12.777 26.605 8.741l28.418-11.771c9.742-4.036 15.174-14.781 12.629-24.992a1077.439 1077.439 0 0 0-4.776-18.455 143.175 143.175 0 0 0 23.554-23.562 1073.611 1073.611 0 0 0 18.46 4.777c10.211 2.547 20.956-2.884 24.993-12.63l11.771-28.419c4.034-9.745.275-21.182-8.743-26.602zm-23.728 45.101a1033.805 1033.805 0 0 1-17.703-4.602c-8.376-2.253-17.215.692-22.519 7.507a120.15 120.15 0 0 1-20.968 20.973c-6.807 5.302-9.748 14.138-7.493 22.509 1.603 5.954 3.148 11.9 4.601 17.696l-26.122 10.819a1035.978 1035.978 0 0 1-9.259-15.765c-4.327-7.514-12.655-11.678-21.216-10.618a120.295 120.295 0 0 1-29.654-.005c-8.585-1.066-16.906 3.098-21.232 10.614a1066.57 1066.57 0 0 1-9.263 15.773l-26.122-10.82a1052.009 1052.009 0 0 1 4.603-17.701c2.255-8.375-.692-17.215-7.507-22.52a120.168 120.168 0 0 1-20.973-20.965c-5.3-6.809-14.136-9.749-22.51-7.495a1051.253 1051.253 0 0 1-17.695 4.601l-10.82-26.121c5.16-3.094 10.459-6.205 15.765-9.26 7.515-4.327 11.683-12.653 10.619-21.215a120.303 120.303 0 0 1 .003-29.655c1.068-8.57-3.097-16.905-10.616-21.233a1035.725 1035.725 0 0 1-15.772-9.265l10.82-26.121c5.82 1.459 11.768 3.005 17.702 4.602 8.372 2.256 17.212-.692 22.52-7.507a120.128 120.128 0 0 1 20.965-20.972c6.808-5.301 9.749-14.138 7.494-22.512-1.59-5.904-3.136-11.85-4.601-17.694l26.122-10.819a1043.911 1043.911 0 0 1 9.259 15.765c4.328 7.515 12.663 11.689 21.216 10.618a120.076 120.076 0 0 1 29.657.005c8.575 1.068 16.905-3.102 21.231-10.617a1047.408 1047.408 0 0 1 9.262-15.771l26.122 10.819a1046.467 1046.467 0 0 1-4.603 17.703c-2.255 8.374.692 17.214 7.507 22.519a120.203 120.203 0 0 1 20.973 20.965c5.3 6.807 14.133 9.748 22.511 7.494 5.919-1.594 11.865-3.14 17.694-4.601l10.819 26.121c-5.153 3.089-10.451 6.2-15.765 9.26-7.515 4.327-11.684 12.654-10.619 21.216a120.173 120.173 0 0 1-.005 29.657c-1.066 8.571 3.101 16.904 10.617 21.231a1047.418 1047.418 0 0 1 15.772 9.263l-10.817 26.124z"/><path d="M241.762 312.511l-.001-.001c-16.48-39.789-62.256-58.752-102.051-42.271-39.788 16.482-58.752 62.262-42.27 102.051 7.983 19.276 22.997 34.287 42.271 42.272 9.637 3.991 19.763 5.987 29.889 5.987s20.252-1.996 29.891-5.987c39.788-16.482 58.751-62.261 42.271-102.051zm-51.042 80.877c-13.618 5.641-28.617 5.64-42.239 0-13.618-5.641-24.225-16.249-29.867-29.868-11.647-28.114 1.753-60.462 29.868-72.107a54.881 54.881 0 0 1 21.047-4.202c21.667 0 42.265 12.84 51.06 34.07 11.645 28.114-1.755 60.461-29.869 72.107zM496.553 100.936a772.031 772.031 0 0 0-12.111-1.713 106.658 106.658 0 0 0-8.214-19.819 782 782 0 0 0 7.357-9.779c5.295-7.161 4.529-17.317-1.78-23.623l-15.808-15.806c-6.309-6.31-16.465-7.075-23.624-1.778a793.655 793.655 0 0 0-9.779 7.355 106.645 106.645 0 0 0-19.819-8.215 782.292 782.292 0 0 0-1.712-12.11C409.746 6.642 402.024 0 393.102 0h-22.356c-8.922 0-16.644 6.642-17.961 15.447a789.351 789.351 0 0 0-1.712 12.11 106.617 106.617 0 0 0-19.819 8.215 757.483 757.483 0 0 0-9.778-7.355c-7.161-5.297-17.317-4.532-23.624 1.777l-15.806 15.805c-6.31 6.308-7.077 16.465-1.78 23.627a771.802 771.802 0 0 0 7.354 9.778 106.777 106.777 0 0 0-8.214 19.819 783.904 783.904 0 0 0-12.11 1.713c-8.807 1.318-15.449 9.039-15.449 17.962v22.355c0 8.922 6.64 16.644 15.447 17.962 3.956.592 8.019 1.167 12.111 1.713a106.766 106.766 0 0 0 8.214 19.819 789.254 789.254 0 0 0-7.357 9.779c-5.294 7.159-4.529 17.317 1.78 23.622l15.808 15.808c6.308 6.31 16.464 7.074 23.624 1.778a776.173 776.173 0 0 0 9.778-7.354 106.695 106.695 0 0 0 19.82 8.214c.545 4.091 1.12 8.155 1.712 12.111 1.318 8.806 9.04 15.448 17.962 15.448h22.356c8.922 0 16.644-6.64 17.961-15.449a796.562 796.562 0 0 0 1.712-12.111 106.565 106.565 0 0 0 19.819-8.215 766.926 766.926 0 0 0 9.778 7.356c7.159 5.297 17.317 4.532 23.624-1.777l15.808-15.806c6.309-6.308 7.075-16.465 1.778-23.626a764.502 764.502 0 0 0-7.354-9.777 106.749 106.749 0 0 0 8.214-19.819 783.904 783.904 0 0 0 12.11-1.713c8.807-1.318 15.449-9.039 15.449-17.962v-22.355c-.001-8.923-6.642-16.645-15.448-17.963zm-6.325 37.206a763.2 763.2 0 0 1-10.934 1.506c-7.273.949-13.227 6.111-15.165 13.149a84.755 84.755 0 0 1-8.009 19.328c-3.611 6.353-3.054 14.215 1.419 20.032a773.98 773.98 0 0 1 6.669 8.799l-11.404 11.405a769.911 769.911 0 0 1-8.802-6.669c-5.814-4.475-13.678-5.028-20.032-1.421a84.784 84.784 0 0 1-19.325 8.01c-7.042 1.94-12.204 7.894-13.15 15.165a749.397 749.397 0 0 1-1.506 10.935h-16.13a783.36 783.36 0 0 1-1.506-10.931c-.949-7.274-6.11-13.228-13.15-15.168a84.75 84.75 0 0 1-19.327-8.009c-6.354-3.61-14.218-3.055-20.031 1.419a750.088 750.088 0 0 1-8.803 6.669l-11.404-11.405a740.795 740.795 0 0 1 6.671-8.803c4.47-5.815 5.027-13.677 1.417-20.03a84.785 84.785 0 0 1-8.009-19.327c-1.939-7.04-7.892-12.201-15.165-13.15-3.677-.48-7.343-.984-10.935-1.507v-16.128a763.2 763.2 0 0 1 10.934-1.506c7.273-.949 13.227-6.111 15.165-13.149a84.747 84.747 0 0 1 8.009-19.328c3.611-6.353 3.054-14.216-1.417-20.031a757.489 757.489 0 0 1-6.67-8.8l11.404-11.405a772.453 772.453 0 0 1 8.8 6.668c5.812 4.475 13.675 5.033 20.034 1.422a84.818 84.818 0 0 1 19.325-8.01c7.042-1.94 12.204-7.894 13.15-15.165.48-3.677.986-7.342 1.507-10.934h16.13a764.79 764.79 0 0 1 1.505 10.931c.949 7.274 6.111 13.228 13.15 15.167a84.777 84.777 0 0 1 19.328 8.01c6.355 3.611 14.218 3.05 20.03-1.42a761.284 761.284 0 0 1 8.803-6.669l11.404 11.405a757.659 757.659 0 0 1-6.67 8.803c-4.471 5.814-5.027 13.676-1.419 20.029a84.848 84.848 0 0 1 8.009 19.328c1.939 7.04 7.892 12.201 15.165 13.15 3.677.48 7.343.985 10.935 1.507v16.128z"/><path d="M381.924 83.675c-25.585 0-46.401 20.815-46.401 46.401 0 25.587 20.815 46.402 46.401 46.402s46.401-20.815 46.401-46.402c0-25.586-20.815-46.401-46.401-46.401zm0 72.176c-14.211 0-25.775-11.563-25.775-25.776s11.563-25.775 25.775-25.775c14.212 0 25.774 11.563 25.775 25.775 0 14.213-11.563 25.776-25.775 25.776z"/></svg>
+              <span class="advantages__description">Собственная производственная база</span>
+            </li>
           </ul>
         </div>
       </section>
 
-      <section class="page-main__services services">
+      <section class="page-main__services services" id="services">
         <div class="services__main-wrapper">
           <h2 class="services__heading heading">Услуги</h2>
           <ul class="services__wrapper accordeon">
             <li class="services__inner-wrapper accordeon__item accordeon__item--opened">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--project">
                 <div class="services__title-wrapper">
                   <h3 class="services__title">Проектирование</h3>
                   <button class="accordeon__button" type="button">
@@ -98,7 +109,7 @@
                   </button>
                 </div>
 
-                <ul class="services__list">
+                <ul class="services__list services__list--engineering">
                   <li class="services__item">
                     <a class="services__link" href="#">Предварительная разработка концепции;</a>
                   </li>
@@ -108,22 +119,22 @@
                   <li class="services__item">
                     <a class="services__link" href="#">Оформление задания на проектирование;</a>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item services__item--less-padded">
                     <a class="services__link" href="#">Разработка всей рабочей и проектной документации;</a>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item services__item--less-padded">
                     <a class="services__link" href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора;</a>
                   </li>
-                  <li class="services__item">
-                    <a class="services__link" href="#">Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм
-                    и проектных разработок).</a>
+                  <li class="services__item services__item--less-padded">
+                    <a class="services__link" href="#">Обеспечение авторского надзора на протяжении всего строительства <span class="services__link services__link--tablet">(контроль за соблюдением всех норм
+                    и проектных разработок).</span></a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li class="services__inner-wrapper accordeon__item">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--engineering">
                 <div class="services__title-wrapper">
                   <h3 class="services__title">Инженерные изыскания</h3>
                   <button class="accordeon__button" type="button">
@@ -161,9 +172,9 @@
             </li>
 
             <li class="services__inner-wrapper accordeon__item">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--building">
                 <div class="services__title-wrapper">
-                <h3 class="services__title">Строительно-монтажные работы</h3>
+                <h3 class="services__title services__title--building">Строительно-монтажные работы</h3>
                   <button class="accordeon__button" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                   </button>
@@ -193,7 +204,7 @@
             </li>
 
             <li class="services__inner-wrapper accordeon__item">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--maintanance">
                 <div class="services__title-wrapper">
                   <h3 class="services__title">Эксплуатация и сервисное обслуживание</h3>
                   <button class="accordeon__button" type="button">
@@ -225,7 +236,7 @@
             </li>
 
             <li class="services__inner-wrapper accordeon__item">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--electricity">
                 <div class="services__title-wrapper">
                   <h3 class="services__title">Электролаборатория</h3>
                   <button class="accordeon__button" type="button">
@@ -260,9 +271,9 @@
             </li>
 
             <li class="services__inner-wrapper accordeon__item">
-              <div class="services__list-wrapper">
+              <div class="services__list-wrapper services__list-wrapper--bonding">
                 <div class="services__title-wrapper">
-                  <h3 class="services__title">Услуги по технологическому присоединению</h3>
+                  <h3 class="services__title services__title--bonding">Услуги по технологическому присоединению</h3>
                   <button class="accordeon__button" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                   </button>
@@ -289,6 +300,107 @@
             </li>
           </div>
       </section>
+
+      <section class="page-main__projects projects">
+        <div class="projects__main-wrapper">
+          <h2 class="projects__heading heading">Проекты</h2>
+          <ul class="projects__list">
+            <li class="projects__item projects__item--stadium">
+              <h3>Стадион «Футур»</h3>
+              <p>В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+            <li class="projects__item projects__item--business">
+              <h3>Бизнес-центр «Ореол»</h3>
+              <p>Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+            <li class="projects__item projects__item--cinema">
+              <h3>Кинотеатр «Семейный»</h3>
+              <p>Специалисты выполнили комплекс работ по системам  учета электроэнергии</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+            <li class="projects__item projects__item--medial">
+              <h3>ТК «Medial»</h3>
+              <p>В целях обеспечения электроэнергией телевизионного комплекса  было осуществлено строительство распределительной сети мощностью 20кВ</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+            <li class="projects__item projects__item--energo projects__item--large">
+              <h3>ОАО «ЭнергоНацКомпани»</h3>
+              <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы<span>, а также поставлены материалы и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ</span> для ОАО «ЭнергоНацКомпани»</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+            <li class="projects__item projects__item--theatre projects__item--large">
+              <h3>Театр «Буратино»</h3>
+              <p>Специалистами  были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации сценических подъемников в здании театра</p>
+              <a class="projects__link" href="#">
+                <span class="projects__arrow"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-main__partners partners">
+        <div class="partners__main-wrapper">
+          <div class="partners__heading-wrapper">
+            <h2 class="partners__heading heading heading--partners">Партнеры</h2>
+            <div class="partners__buttons-wrapper">
+              <button class="partners__button partners__button--left" type="button">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button class="partners__button partners__button--right" type="button">
+                <span class="visually-hidden">Вперёд</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="partners__slider">
+            <div class="partners__slide partners__slide--ava">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/ava_tablet@1x.webp 1x, img/ava_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/ava_desktop@1x.webp 1x, img/ava_desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/ava_tablet@1x.png 1x, img/ava_tablet@2x.png 2x">
+                <img src="img/ava_desktop@1x.png" srcset="img/ava_desktop@2x.png 2x" alt="Ava Company">
+              </picture>
+            </div>
+            <div class="partners__slide partners__slide--mirror">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/mirror_tablet@1x.webp 1x, img/mirror_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/mirror_desktop@1x.webp 1x, img/mirror_desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/mirror_tablet@1x.png 1x, img/mirror_tablet@2x.png 2x">
+                <img src="img/mirror_desktop@1x.png" srcset="img/mirror_desktop@2x.png 2x" alt="Mirror Business Center">
+              </picture>
+            </div>
+            <div class="partners__slide partners__slide--shield">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/shield_tablet@1x.webp 1x, img/shield_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/shield_desktop@1x.webp 1x, img/shield_desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/shield_tablet@1x.png 1x, img/shield_tablet@2x.png 2x">
+                <img src="img/shield_desktop@1x.png" srcset="img/shield_desktop@2x.png 2x" alt="Shield Охранное предприятие">
+              </picture>
+            </div>
+            <div class="partners__slide partners__slide--teplo">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/shield_tablet@1x.webp 1x, img/shield_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/teplo_desktop@1x.webp 1x, img/teplo_desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/shield_tablet@1x.png 1x, img/shield_tablet@2x.png 2x">
+                <img src="img/teplo_desktop@1x.png" srcset="img/teplo_desktop@2x.png 2x" alt="ЗАО НТФ Теплодомэнерг">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -297,7 +409,7 @@
         <h2 class="visually-hidden">Карта с адресом компании</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4504.588260727117!2d37.6139633!3d55.6316971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572115944748!5m2!1sru!2sru" width="100%" height="807" allowfullscreen=""></iframe>
       </section>
-      <div class="page-footer__main-footer">
+      <div class="page-footer__main-footer" id="feedback">
         <div class="page-footer__wrapper">
 
           <div class="page-footer__inner-wrapper">
@@ -394,6 +506,49 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.partners__slider').slick({
+          mobileFirst: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                centerMode: true,
+                centerPadding: '0px'
+              }
+            },
+            {
+              breakpoint: 1024,
+              settings: 'unslick'
+            }
+          ]
+        });
+
+       $('.advantages__list').slick({
+         mobileFirst: true,
+         breakpoint: 768,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         centerMode: true,
+         centerPadding: '0px',
+         responsive: [
+           {
+             breakpoint: 768,
+             settings: 'unslick'
+           }
+         ]
+       });
+     });
+    </script>
   </body>
 </html>
