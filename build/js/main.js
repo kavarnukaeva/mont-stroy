@@ -6,13 +6,11 @@
 
   [].forEach.call(toggles, function (toggle) {
     toggle.addEventListener('click', function () {
-      var item = toggle.closest('.accordeon__item');
+      var activeItem = document.querySelector('.accordeon__item--opened');
+      var closest = toggle.closest('.accordeon__item');
+      activeItem.classList.remove('accordeon__item--opened');
 
-      if (item.classList.contains('accordeon__item--opened')) {
-        item.classList.remove('accordeon__item--opened');
-      } else {
-        item.classList.add('accordeon__item--opened');
-      }
+      closest.classList.add('accordeon__item--opened');
     });
   });
 
