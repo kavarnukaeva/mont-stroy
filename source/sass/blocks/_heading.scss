@@ -16,7 +16,7 @@
     left: 26%;
     transform: translate(-47% -26%);
 
-    width: 868px;
+    width: 74%;
     height: 2px;
     background-color: #000000;
 
@@ -44,9 +44,10 @@
   }
 
   &--partners {
+    position: static;
+
     &::before {
-      left: 175%;
-      width: 715px;
+      width: 55%;
     }
   }
 }

@@ -1,5 +1,9 @@
 .page-main {
   background-color: #fefdff;
+
+  @media (max-width: $mobile-width) {
+    background-color: #ffffff;
+  }
 }
 
 .page-main__info-mobile {

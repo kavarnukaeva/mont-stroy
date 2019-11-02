@@ -95,6 +95,8 @@
 }
 
 .partners__heading-wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   margin-bottom: 47px;
@@ -120,6 +122,7 @@
   padding: 0;
   border: 2px solid #292929;
   background: none;
+  cursor: pointer;
 
   &::before {
     content: "";
