@@ -26,6 +26,14 @@
     });
   });
 
+  var menuButton = document.querySelector('.page-header__navigation-button');
+  var navigation = document.querySelector('.page-header__navigation');
+
+  menuButton.addEventListener('click', function () {
+    menuButton.classList.toggle('page-header__navigation-button--close');
+    navigation.classList.toggle('page-header__navigation--opened');
+  });
+
 // var pageHeader = document.querySelector('.page-header');
 // var headerToggle = document.querySelector('.page-header__toggle');
 //
