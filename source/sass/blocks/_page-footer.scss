@@ -525,26 +525,6 @@
   a {
     margin-bottom: 0;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 6px;
-    //   left: 8px;
-    //   width: 16px;
-    //   height: 12px;
-    //   background-image: url("#{$image-dir}/phone.svg");
-    //   background-repeat: no-repeat;
-    //
-    //   @media (max-width: $tablet-width) {
-    //     left: 20px;
-    //   }
-    //
-    //   @media (max-width: $mobile-width) {
-    //     top: 0;
-    //     left: 48px;
-    //   }
-    // }
-
     &:hover,
     &:focus {
       color: #00ffd7;
