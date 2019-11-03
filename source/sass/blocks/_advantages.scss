@@ -10,6 +10,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 14px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -36,6 +37,10 @@
       color: #d8d8d8;
       opacity: 1;
     }
+
+    @media (max-width: $mobile-width) {
+      bottom: -15px;
+    }
   }
 
   .slick-dots li.slick-active {
@@ -51,6 +56,10 @@
 
   .slick-track {
     display: flex;
+  }
+
+  .slick-arrow {
+    display: none;
   }
 }
 
@@ -108,13 +117,14 @@
         display: none;
       }
     }
+  }
 
-    @media (max-width: $mobile-width) {
-      align-self: flex-start;
-      padding: 31px;
+  @media (max-width: $mobile-width) {
+    align-self: flex-start;
+    padding: 30px 50px;
+    padding-bottom: 45px;
 
-      box-shadow: none;
-    }
+    box-shadow: none;
   }
 
   &--quality {
@@ -124,7 +134,7 @@
       width: calc(33% - 8px);
 
       &::after {
-        right: -124px;
+        right: -54%;
       }
     }
 
@@ -141,23 +151,26 @@
       width: 33%;
 
       &::after {
-        right: 112px;
+        right: 47%;
       }
     }
 
     @media (max-width: $mobile-width) {
       width: 100%;
+      padding-left: 50px;
     }
   }
 
   &--production {
     width: 232px;
+    margin-right: -7px;
 
     @media (max-width: $tablet-width) {
       width: calc(33% - 8px);
+      margin-right: 0;
 
       &::after {
-        left: -117px;
+        left: -51%;
       }
     }
 
@@ -193,7 +206,13 @@
     }
 
     @media (max-width: $mobile-width) {
+      padding-bottom: 45px;
+
       transform: none;
+
+      span {
+        padding: 0;
+      }
 
       svg {
         transform: none;
@@ -201,7 +220,6 @@
     }
   }
 }
-
 
 .advantages__description {
   display: block;
@@ -251,8 +269,6 @@
 
 .advantages__item.slick-current {
   @media (max-width: $mobile-width) {
-    padding: 45px;
-
     text-align: center;
 
     transform: none;

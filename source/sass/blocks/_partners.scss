@@ -4,11 +4,11 @@
   padding-left: 25px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 53px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 47px;
+    margin-bottom: 27px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -16,9 +16,13 @@
   .slick-dots {
     bottom: 75px;
 
+    @media (max-width: $tablet-width) {
+      bottom: 15px;
+    }
+
     @media (max-width: $mobile-width) {
-      bottom: -2px;
-      left: 50%;
+      bottom: 18px;
+      left: 53%;
 
       display: flex;
       justify-content: space-between;
@@ -81,7 +85,8 @@
     align-items: flex-start;
 
     @media (max-width: $tablet-width) {
-      padding-bottom: 0;
+      align-items: center;
+      padding-bottom: 30px;
     }
   }
 
@@ -101,8 +106,12 @@
   justify-content: space-between;
   margin-bottom: 47px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
   @media (max-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 11px;
   }
 }
 
@@ -118,7 +127,7 @@
   position: relative;
   display: block;
   width: 58px;
-  height: 32px;
+  height: 35px;
   padding: 0;
   border: 2px solid #292929;
   background: none;
@@ -189,6 +198,10 @@
   &--ava {
     padding-right: 39px;
 
+    @media (max-width: $tablet-width) {
+      padding-right: 0;
+    }
+
     img {
       width: 175px;
       height: 127px;
@@ -253,7 +266,7 @@
 .partners__slide.slick-center {
   @media (max-width: $tablet-width) {
     z-index: 1;
-    height: 200px;
+    height: 190px;
 
     transform: scale(1.17, 1);
   }

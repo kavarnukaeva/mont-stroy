@@ -116,14 +116,14 @@
     order: 1;
     width: 100%;
     margin-right: 0;
-    padding-bottom: 28px;
+    padding-bottom: 23px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     order: 2;
-    padding-bottom: 43px;
+    padding-bottom: 36px;
 
     background-color: #1a1a1a;
     border: none;
@@ -191,7 +191,7 @@
 
 .page-footer__navigation-item {
   @media (max-width: $mobile-width) {
-    padding: 18px 20px;
+    padding: 19px 20px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -217,7 +217,7 @@
   @media (max-width: $mobile-width) {
     width: auto;
     padding: 0 20px;
-    padding-top: 43px;
+    padding-top: 15px;
   }
 }
 
@@ -234,47 +234,44 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 150px;
+    width: 160px;
   }
 }
-
-// .page-footer__social-item {
-//   // margin-right: 28px;
-//
-//   @media (max-width: $tablet-width) {
-//     margin: 0;
-//   }
-//
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
 
 .page-footer__social-item {
   &--vkontakte {
     width: 35px;
-    //height: 21px;
 
     @media (max-width: $tablet-width) {
       width: 22px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 41px;
     }
   }
 
   &--twitter {
     width: 30px;
-    //height: 22px;
 
     @media (max-width: $tablet-width) {
       width: 17px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 31px;
     }
   }
 
   &--facebook {
     width: 28px;
-    //height: 29px;
 
     @media (max-width: $tablet-width) {
       width: 19px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 29px;
     }
   }
 }
@@ -289,89 +286,10 @@
       fill: #ffffff;
     }
   }
-  // width: 35px;
-  // height: 26px;
-  // background-repeat: no-repeat;
-
-  // @media (max-width: $mobile-width) {
-  //   width: 40px;
-  //   height: 24px;
-  //
-  //   background-size: 100%;
-  // }
-
-  // &--vk {
-  //   background-image: url("#{$image-dir}/vkontakte@1x.png");
-  //
-  //   @media (max-width: $tablet-width) {
-  //     width: 22px;
-  //     height: 14px;
-  //
-  //     background-size: 22px 14px;
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     width: 40px;
-  //     height: 24px;
-  //
-  //     background-size: 100%;
-  //   }
-  // }
-  //
-  // &--tw {
-  //   background-image: url("#{$image-dir}/twitter@1x.png");
-  //
-  //   @media (max-width: $tablet-width) {
-  //     width: 17px;
-  //     height: 14px;
-  //
-  //     background-size: 17px 14px;
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     width: 31px;
-  //     height: 26px;
-  //
-  //     background-size: 100%;
-  //   }
-  // }
-  //
-  // &--fb {
-  //   background-image: url("#{$image-dir}/facebook@1x.png");
-  //
-  //   @media (max-width: $tablet-width) {
-  //     width: 9px;
-  //     height: 16px;
-  //
-  //     background-size: 9px 16px;
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     width: 15px;
-  //     height: 29px;
-  //
-  //     background-size: 100%;
-  //   }
-  // }
 }
 
 .page-footer__social-icon {
   fill: #666666;
-
-  // &--vkontakte {
-  //   width: 35px;
-  //   height: 21px;
-  // }
-  //
-  // &--twitter {
-  //   width: 27px;
-  //   height: 22px;
-  // }
-  //
-  // &--facebook {
-  //   width: 14px;
-  //   height: 26px;
-  // }
 }
 
 .page-footer__feedback-form {
@@ -379,7 +297,7 @@
   align-self: flex-start;
   margin-top: -248px;
   padding-top: 43px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   background-color: #ffffff;
 
   @media (max-width: $tablet-width) {
@@ -403,7 +321,7 @@
 }
 
 .page-footer__contacts {
-  width: 208px;
+  width: 210px;
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -416,43 +334,18 @@
     padding: 0 20px;
   }
 
+  div {
+    position: relative;
+  }
+
+  svg {
+    position: absolute;
+  }
+
   span {
     display: block;
 
     &:first-child {
-      @media (max-width: $tablet-width) {
-        margin-bottom: 7px;
-      }
-
-      @media (max-width: $mobile-width) {
-        margin-bottom: 0;
-      }
-
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   top: 1px;
-      //   left: 8px;
-      //   width: 12px;
-      //   height: 15px;
-      //   background-image: url("#{$image-dir}/map-pin-footer.svg");
-      //   background-repeat: no-repeat;
-      //
-      //   @media (max-width: $tablet-width) {
-      //     top: 4px;
-      //     left: 23px;
-      //   }
-      //
-      //   @media (max-width: $mobile-width) {
-      //     top: 1px;
-      //     left: 48px;
-      //   }
-      // }
-    }
-
-    &:nth-child(2) {
-      margin-right: -13px;
-
       @media (max-width: $tablet-width) {
         margin-bottom: 7px;
       }
@@ -475,33 +368,20 @@
     }
   }
 
+  .page-footer__address-street {
+    margin-right: -13px;
 
-  // a {
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: 7px;
-  //     left: 8px;
-  //     width: 16px;
-  //     height: 12px;
-  //     background-image: url("#{$image-dir}/email.svg");
-  //     background-repeat: no-repeat;
-  //
-  //     @media (max-width: $tablet-width) {
-  //       top: 5px;
-  //       left: 22px;
-  //     }
-  //
-  //     @media (max-width: $mobile-width) {
-  //       top: 4px;
-  //       left: 48px;
-  //     }
-  //   }
-  // }
+    @media (max-width: $tablet-width) {
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 0;
+    }
+  }
 
   span,
   a {
-    // position: relative;
     display: block;
     padding-left: 39px;
 
@@ -540,13 +420,74 @@
         color: rgba(255, 255, 255, 0.5);
       }
 
+      span {
+        margin-bottom: 10px;
+      }
+
       a {
         font-weight: 700;
+      }
+
+      .page-footer__address-wrapper,
+      .page-footer__email-wrapper,
+      .page-footer__phone-wrapper {
+        svg {
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .page-footer__address-wrapper {
+        margin-bottom: 23px;
+      }
+
+      .page-footer__email-wrapper {
+        margin-bottom: 26px;
       }
     }
   }
 }
 
+.page-footer__address-wrapper {
+  &:nth-child(2) {
+    margin-right: -15px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 7px;
+    }
+  }
+
+  svg {
+    left: 10px;
+
+    @media (max-width: $tablet-width) {
+      top: 3px;
+      left: 25px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 1px;
+      left: 48px;
+    }
+  }
+}
+
+.page-footer__email-wrapper {
+  svg {
+    left: 8px;
+    top: 9px;
+
+    @media (max-width: $tablet-width) {
+      left: 25px;
+      top: 6px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 4px;
+      left: 47px;
+    }
+  }
+}
 
 .page-footer__email {
   margin-bottom: 36px;
@@ -566,6 +507,21 @@
 }
 
 .page-footer__phone-wrapper {
+  svg {
+    left: 8px;
+    top: 6px;
+
+    @media (max-width: $tablet-width) {
+      left: 24px;
+      top: 3px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 1px;
+      left: 47px;
+    }
+  }
+
   a {
     margin-bottom: 0;
 
@@ -594,35 +550,35 @@
       color: #00ffd7;
     }
   }
+}
 
-  .page-footer__working-hours {
-    padding-left: 35px;
+.page-footer__working-hours {
+  padding-left: 35px;
 
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.5;
-    font-family: $brand-font;
-    color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: $brand-font;
+  color: rgba(255, 255, 255, 0.6);
 
-    @media (max-width: $tablet-width) {
-      padding-left: 50px;
+  @media (max-width: $tablet-width) {
+    padding-left: 50px;
 
-      font-size: 12px;
-    }
+    font-size: 12px;
+  }
 
-    @media (max-width: $mobile-width) {
-      margin-left: 0;
-      padding-left: 75px;
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    padding-left: 75px;
 
-      &--mobile {
-        padding-left: 30px;
-      }
+    &--mobile {
+      padding-left: 30px;
     }
   }
 }
 
 .page-footer__copyright {
-  padding-top: 80px;
+  padding-top: 77px;
   padding-bottom: 45px;
   background-color: #000000;
 

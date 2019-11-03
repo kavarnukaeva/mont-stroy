@@ -40,7 +40,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 130px;
+    padding-top: 129px;
     padding-bottom: 50px;
   }
 
@@ -64,8 +64,9 @@
     }
 
     @media (max-width: $mobile-width) {
+      margin-bottom: 22px;
       font-size: 16px;
-      letter-spacing: 1.9px;
+      letter-spacing: 1.4px;
       text-align: center;
     }
   }
@@ -104,7 +105,7 @@
 
     @media (max-width: $mobile-width) {
       display: block;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       padding-left: 15px;
       padding-right: 15px;
 
@@ -154,7 +155,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 21px;
   }
 
   &:hover,
