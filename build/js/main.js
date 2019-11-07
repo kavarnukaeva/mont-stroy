@@ -2,7 +2,7 @@
 
 (function () {
 
-  var toggles = document.querySelectorAll('.accordeon__button');
+  var toggles = document.querySelectorAll('.services__title-wrapper');
   var scrollFeedback = document.querySelector('.page-header__feedback-button');
   var scrollServices = document.querySelector('.company__services-button');
   var scrollContact = document.querySelector('.company__feedback-button');
