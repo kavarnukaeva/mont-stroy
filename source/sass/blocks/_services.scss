@@ -5,6 +5,8 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 110px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @media (max-width: $mobile-width) {
@@ -45,6 +47,13 @@
     position: relative;
     flex-direction: column;
     margin-right: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -201,6 +210,8 @@
   margin-bottom: 11px;
 
   @media (max-width: $tablet-width) {
+    position: relative;
+
     margin-bottom: 0;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -208,10 +219,18 @@
     padding-left: 20px;
     background-color: #f4f4f4;
     border-bottom: 1px solid #e8e8e8;
+  }
+}
 
+.services__title-wrapper,
+.services__item {
+  @media (max-width: $tablet-width) {
     &:hover,
     &:focus {
-      box-shadow: 0 2px 6px 1px rgba(0, 255, 216, 0.65);
+      position: relative;
+      z-index: 5;
+
+      box-shadow: inset 0 0 6px 2px rgba(0,255,216,.65), 0 0 5px 1px rgba(0,255,216,.65);
       border-bottom: none;
       border: 1px solid #00ffd7;
     }
