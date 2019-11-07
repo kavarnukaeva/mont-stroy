@@ -17,7 +17,7 @@
   var slides = document.querySelectorAll('.advantages__item');
 
   [].forEach.call(slides, function (slide) {
-    slide.addEventListener('touch', function () {
+    slide.addEventListener('click', function () {
       var activeItem = document.querySelector('.advantages__item--active');
       activeItem.classList.remove('advantages__item--active');
       slide.classList.add('advantages__item--active');
