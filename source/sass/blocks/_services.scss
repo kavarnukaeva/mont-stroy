@@ -16,6 +16,8 @@
 
 .services__main-wrapper {
   @include centerer();
+
+  overflow: hidden;
 }
 
 .services__heading {
