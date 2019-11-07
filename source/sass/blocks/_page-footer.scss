@@ -501,6 +501,13 @@
       left: 48px;
     }
   }
+
+  &:hover,
+  &:focus {
+    span {
+      color: #00ffd7;
+    }
+  }
 }
 
 .page-footer__email-wrapper {
