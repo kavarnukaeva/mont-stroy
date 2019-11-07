@@ -3,6 +3,11 @@
 (function () {
 
   var toggles = document.querySelectorAll('.accordeon__button');
+  var scrollFeedback = document.querySelector('.page-header__feedback-button');
+  var scrollServices = document.querySelector('.company__services-button');
+  var scrollContact = document.querySelector('.company__feedback-button');
+  var feedbackForm = document.querySelector('.feedback');
+  var services = document.querySelector('.services');
 
   [].forEach.call(toggles, function (toggle) {
     toggle.addEventListener('click', function () {
@@ -17,7 +22,7 @@
   var slides = document.querySelectorAll('.advantages__item');
 
   [].forEach.call(slides, function (slide) {
-    slide.addEventListener('click', function () {
+    slide.addEventListener('touch', function () {
       var activeItem = document.querySelector('.advantages__item--active');
       activeItem.classList.remove('advantages__item--active');
       slide.classList.add('advantages__item--active');
@@ -42,6 +47,26 @@
       menuButton.classList.remove('page-header__navigation-button--close');
       body.classList.remove('overlay');
     }
+  });
+
+  var scrollTo = function (element) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.offsetTop
+    });
+  };
+
+  scrollFeedback.addEventListener('click', function () {
+    scrollTo(feedbackForm);
+  });
+
+  scrollServices.addEventListener('click', function () {
+    scrollTo(services);
+  });
+
+  scrollContact.addEventListener('click', function () {
+    scrollTo(feedbackForm);
   });
 
 
