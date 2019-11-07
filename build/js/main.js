@@ -32,6 +32,19 @@
     navigation.classList.toggle('page-header__navigation--opened');
   });
 
+  var body = document.querySelector('body');
+
+
+  document.addEventListener('click', function (evt) {
+    if (!navigation.contains(evt.target) && evt.target !== menuButton
+    && navigation.classList.contains('page-header__navigation--opened')) {
+      navigation.classList.remove('page-header__navigation--opened');
+      menuButton.classList.remove('page-header__navigation-button--close');
+      body.classList.remove('overlay');
+    }
+  });
+
+
 // var pageHeader = document.querySelector('.page-header');
 // var headerToggle = document.querySelector('.page-header__toggle');
 //
