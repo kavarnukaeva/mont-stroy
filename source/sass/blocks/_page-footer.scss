@@ -452,6 +452,31 @@
       }
     }
   }
+
+  .page-footer__working-hours {
+    padding-left: 35px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: $brand-font;
+    color: rgba(255, 255, 255, 0.6);
+
+    @media (max-width: $tablet-width) {
+      padding-left: 50px;
+
+      font-size: 12px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-left: 0;
+      padding-left: 75px;
+
+      &--mobile {
+        padding-left: 30px;
+      }
+    }
+  }
 }
 
 .page-footer__address-wrapper {
@@ -534,31 +559,6 @@
     &:hover,
     &:focus {
       color: #00ffd7;
-    }
-  }
-}
-
-.page-footer__working-hours {
-  padding-left: 35px;
-
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: $brand-font;
-  color: rgba(255, 255, 255, 0.6);
-
-  @media (max-width: $tablet-width) {
-    padding-left: 50px;
-
-    font-size: 12px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-left: 0;
-    padding-left: 75px;
-
-    &--mobile {
-      padding-left: 30px;
     }
   }
 }
