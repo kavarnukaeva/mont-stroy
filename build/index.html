@@ -73,6 +73,7 @@
       </section>
 
       <section class="page-main__info-mobile">
+        <h2 class="visually-hidden">О компании</h2>
         <p>Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с 1992 года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.</p>
       </section>
 
@@ -407,7 +408,7 @@
       <h2 class="page-footer__heading heading heading--contacts">Контакты</h2>
       <section class="page-footer__map">
         <h2 class="visually-hidden">Карта с адресом компании</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4504.588260727117!2d37.6139633!3d55.6316971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572115944748!5m2!1sru!2sru" width="100%" height="807" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4504.588260727117!2d37.6139633!3d55.6316971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572115944748!5m2!1sru!2sru" allowfullscreen=""></iframe>
       </section>
       <div class="page-footer__main-footer" id="feedback">
         <div class="page-footer__wrapper">
@@ -437,6 +438,7 @@
                 </li>
               </ul>
               <section class="page-footer__contacts page-footer__contacts--mobile">
+                <h2 class="visually-hidden">Контактные данные</h2>
                 <div class="page-footer__address-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15"><path fill="#00ffd8" d="M12 5.98c0 .387-.037.765-.108 1.134 0 0-.012.067-.04.187a5.722 5.722 0 0 1-.404 1.187c-.604 1.426-1.995 3.803-5.116 6.385a.523.523 0 0 1-.666 0C2.545 12.288 1.154 9.911.553 8.491a5.984 5.984 0 0 1-.524-3.093C.315 2.432 2.798.108 5.786.003 9.196-.117 12 2.603 12 5.98zm-3.087.07A2.91 2.91 0 0 0 6 3.145 2.91 2.91 0 0 0 3.085 6.05a2.91 2.91 0 0 0 2.914 2.905A2.91 2.91 0 0 0 8.913 6.05z"></path></svg>
                   <span>Варшавское шоссе,</span>
@@ -497,8 +499,8 @@
                     </p>
                   </div>
                   <p class="feedback__item feedback__item--email">
-                    <label for="feedback-phone-field">E-mail</label>
-                    <input type="tel" name="tel" id="feedback-phone-field" required="">
+                    <label for="feedback-email-field">E-mail</label>
+                    <input type="email" name="email" id="feedback-email-field" required="">
                   </p>
                   <p class="feedback__item feedback__item--message">
                     <label for="feedback-message-field">Сообщение</label>
@@ -513,6 +515,7 @@
           </section>
 
           <section class="page-footer__contacts">
+            <h2 class="visually-hidden">Контактные данные</h2>
             <div class="page-footer__address-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15"><path fill="#00ffd8" d="M12 5.98c0 .387-.037.765-.108 1.134 0 0-.012.067-.04.187a5.722 5.722 0 0 1-.404 1.187c-.604 1.426-1.995 3.803-5.116 6.385a.523.523 0 0 1-.666 0C2.545 12.288 1.154 9.911.553 8.491a5.984 5.984 0 0 1-.524-3.093C.315 2.432 2.798.108 5.786.003 9.196-.117 12 2.603 12 5.98zm-3.087.07A2.91 2.91 0 0 0 6 3.145 2.91 2.91 0 0 0 3.085 6.05a2.91 2.91 0 0 0 2.914 2.905A2.91 2.91 0 0 0 8.913 6.05z"></path></svg>
               <span class="page-footer__address-street">Варшавское шоссе,</span>
@@ -536,11 +539,11 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
+    <script>
       $(document).ready(function () {
         $('.partners__slider').slick({
           mobileFirst: true,
