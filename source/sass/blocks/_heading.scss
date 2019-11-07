@@ -49,5 +49,25 @@
     &::before {
       width: 61%;
     }
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
+
+  &--partners-tablet {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 }
