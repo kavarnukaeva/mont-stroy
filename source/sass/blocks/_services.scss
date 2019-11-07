@@ -20,6 +20,10 @@
   @include centerer();
 
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    overflow: inherit;
+  }
 }
 
 .services__heading {
