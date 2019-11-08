@@ -2,6 +2,10 @@
 
 (function () {
 
+  var slides = document.querySelectorAll('.advantages__item');
+  var menuButton = document.querySelector('.page-header__navigation-button');
+  var navigation = document.querySelector('.page-header__navigation');
+  var body = document.querySelector('body');
   var toggles = document.querySelectorAll('.services__title-wrapper');
   var scrollFeedback = document.querySelector('.page-header__feedback-button');
   var scrollServices = document.querySelector('.company__services-button');
@@ -19,8 +23,6 @@
     });
   });
 
-  var slides = document.querySelectorAll('.advantages__item');
-
   [].forEach.call(slides, function (slide) {
     slide.addEventListener('touch', function () {
       var activeItem = document.querySelector('.advantages__item--active');
@@ -29,16 +31,10 @@
     });
   });
 
-  var menuButton = document.querySelector('.page-header__navigation-button');
-  var navigation = document.querySelector('.page-header__navigation');
-
   menuButton.addEventListener('click', function () {
     menuButton.classList.toggle('page-header__navigation-button--close');
     navigation.classList.toggle('page-header__navigation--opened');
   });
-
-  var body = document.querySelector('body');
-
 
   document.addEventListener('click', function (evt) {
     if (!navigation.contains(evt.target) && evt.target !== menuButton
@@ -68,7 +64,6 @@
   scrollContact.addEventListener('click', function () {
     scrollTo(feedbackForm);
   });
-
 
 // var pageHeader = document.querySelector('.page-header');
 // var headerToggle = document.querySelector('.page-header__toggle');

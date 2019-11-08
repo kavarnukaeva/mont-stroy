@@ -151,7 +151,6 @@
   @include reset-list();
 
   display: flex;
-  // justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

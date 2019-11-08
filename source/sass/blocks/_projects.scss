@@ -5,6 +5,8 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 73px;
+    padding-right: 22px;
+    padding-left: 22px;
   }
 
   @media (max-width: $mobile-width) {
@@ -30,7 +32,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 
@@ -46,7 +48,7 @@
     flex-direction: column;
   }
 
-  .projects__item h3 {
+  .projects__item-inner h3 {
     @media (max-width: $mobile-width) {
       margin: 0;
     }
@@ -125,6 +127,7 @@
       padding: 40px;
       padding-right: 110px;
       padding-bottom: 30px;
+      padding-left: 43px;
     }
 
     @media (max-width: $mobile-width) {
@@ -147,7 +150,11 @@
         margin-bottom: 50px;
 
         @media (max-width: $tablet-width) {
-          margin-bottom: 8px;
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: $mobile-width) {
+          margin-bottom: 0;
         }
       }
 
@@ -189,13 +196,14 @@
         }
 
         @media (max-width: $mobile-width) {
+          margin-bottom: 0;
           letter-spacing: 0.3pt;
         }
       }
 
 
       @media (max-width: $tablet-width) {
-        padding-top: 40px;
+        padding-top: 43px;
 
         background-image: url("#{$image-dir}/business_tablet@1x.jpg");
 
@@ -230,6 +238,10 @@
 
         @media (max-width: $tablet-width) {
           margin-bottom: 13px;
+        }
+
+        @media (max-width: $mobile-width) {
+          margin-bottom: 0;
         }
       }
 
@@ -275,6 +287,10 @@
 
         @media (max-width: $tablet-width) {
           margin-bottom: 15px;
+        }
+
+        @media (max-width: $mobile-width) {
+          margin-bottom: 0;
         }
       }
 
@@ -431,7 +447,7 @@
 
 .projects__link {
   position: absolute;
-  right: 10px;
+  right: 14px;
   bottom: 10px;
   display: block;
   width: 46px;
