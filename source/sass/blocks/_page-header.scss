@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
 
-  min-width: 542px;
+  min-width: 544px;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -126,7 +126,7 @@
 }
 
 .page-header__navigation {
-  min-width: 342px;
+  min-width: 344px;
 
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -151,6 +151,7 @@
   @include reset-list();
 
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
