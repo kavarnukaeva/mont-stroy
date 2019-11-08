@@ -136,11 +136,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 11px;
+    top: 50%;
 
     width: 16px;
     height: 6px;
     background-repeat: no-repeat;
+
+    transform: translateY(-50%);
   }
 
   &--left {
@@ -149,6 +151,19 @@
     &::before {
       left: 12px;
       background-image: url("#{$image-dir}/arrow_left.svg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -2px;
+
+      width: 1px;
+      height: 8px;
+      background-color: #292929;
+
+      transform: translateY(-50%);
     }
   }
 
@@ -160,8 +175,7 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: rgba(0, 255, 216, 0.3);
   }
 }
@@ -193,6 +207,10 @@
   @media (max-width: $mobile-width) {
     background: none;
     box-shadow: none;
+
+    img {
+      transform: scale(0.8);
+    }
   }
 
   &--ava {
@@ -236,6 +254,11 @@
   &--teplo img {
     width: 173px;
     height: 135px;
+
+    @media (max-width: $tablet-width) {
+      width: 211px;
+      height: 135px;
+    }
   }
 }
 
