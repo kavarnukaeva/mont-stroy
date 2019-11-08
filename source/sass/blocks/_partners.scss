@@ -205,7 +205,9 @@
   }
 
   @media (max-width: $mobile-width) {
+    /* stylelint-disable */
     width: calc(100vw - 40px) !important;
+    /* stylelint-enable */
     background: none;
     box-shadow: none;
 
