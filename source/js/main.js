@@ -65,6 +65,55 @@
     scrollTo(feedbackForm);
   });
 
+  $(document).ready(function () {
+    $('.partners__slider').slick({
+      mobileFirst: true,
+      slidesToShow: 1,
+      dots: true,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            slidesToShow: 3,
+            centerMode: true,
+            centerPadding: '0'
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: 'unslick'
+        }
+      ]
+    });
+
+    $('.advantages__list').slick({
+      mobileFirst: true,
+      breakpoint: 767,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '0px',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: 'unslick'
+        }
+      ]
+    });
+  });
+
+  var element = document.querySelector('[type="tel"]');
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+
+  IMask(element, maskOptions);
+
+
 // var pageHeader = document.querySelector('.page-header');
 // var headerToggle = document.querySelector('.page-header__toggle');
 //

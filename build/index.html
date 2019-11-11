@@ -550,59 +550,9 @@
     </footer>
 
     <script src="https://unpkg.com/imask"></script>
-    <script>
-      var element = document.querySelector('[type="tel"]');
-      var maskOptions = {
-        mask: '+{7}(000)000-00-00'
-      };
-
-      IMask(element, maskOptions);
-    </script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.partners__slider').slick({
-          mobileFirst: true,
-          slidesToShow: 1,
-          dots: true,
-          arrows: false,
-          responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                arrows: false,
-                slidesToShow: 3,
-                centerMode: true,
-                centerPadding: '0'
-              }
-            },
-            {
-              breakpoint: 1024,
-              settings: 'unslick'
-            }
-          ]
-        });
-
-       $('.advantages__list').slick({
-         mobileFirst: true,
-         breakpoint: 767,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: true,
-         arrows: false,
-         centerMode: true,
-         centerPadding: '0px',
-         responsive: [
-           {
-             breakpoint: 767,
-             settings: 'unslick'
-           }
-         ]
-       });
-     });
-    </script>
   </body>
 </html>
